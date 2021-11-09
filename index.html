@@ -19,9 +19,9 @@
                 <span class="studio-logo">Studio</span>
             </a>
                <ul class="menu-nav">
-                    <li class="menu-nav-text"><a href="/" class="nav-link-f"> Студия</a></li>
-                    <li class="menu-nav-text"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-                    <li class="menu-nav-text"><a href="" class="nav-link">Контакты</a></li>
+                    <li class="menu-nav-text"><a href="/" class="nav-link-f position-link"> Студия</a></li>
+                    <li class="menu-nav-text"><a href="./portfolio.html" class="nav-link position-link">Портфолио</a></li>
+                    <li class="menu-nav-text"><a href="" class="nav-link position-link">Контакты</a></li>
               </ul>
           </nav>
     
@@ -52,9 +52,17 @@
                <div class="container">
                    <h1 class="effect-design">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
     
-                   <button type="button" class="button-service">Заказать услугу</button>
-    
-               </div>
+                   <button type="button" class="button-service modal-btn" data-modal-open>Заказать услугу</button>
+                </div>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="modal-close-btn" data-modal-close>
+                            <svg class="modal-close-svg" width="18" height="18">
+                                <use href="./images/icons.svg#icon-close-black-1"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </section>
             <!--section 2-->
         <section class="menu-list">
@@ -150,33 +158,33 @@
                             <ul class="social-icons">
                                 <li class="social-icon-list">
                                     <a href="" class="soc-link">
-                                         <svg class="team-icon">
-                                             <use href="./images/icons.svg#icon-ellipse-3"></use>
-                                         </svg>
-                                     </a>
-                                </li>
-                                <li class="social-icon-list">
-                                    <a href="" class="soc-link">
                                         <svg class="team-icon">
-                                             <use href="./images/icons.svg#icon-ellipse"></use>
+                                            <use href="./images/icons.svg#icon-ellipse-3"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-icon-list">
                                     <a href="" class="soc-link">
-                                         <svg class="team-icon">
-                                             <use href="./images/icons.svg#icon-ellipse-1"></use>
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse"></use>
                                         </svg>
-                                     </a>
+                                    </a>
                                 </li>
                                 <li class="social-icon-list">
-                                     <a href="" class="soc-link">
-                                         <svg class="team-icon">
-                                             <use href="./images/icons.svg#icon-ellipse-2"></use>
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse-1"></use>
                                         </svg>
-                                     </a>
+                                    </a>
                                 </li>
-                           </ul>
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team-detail">
@@ -189,34 +197,34 @@
                                 Frontend Developer
                             </p>
                             <ul class="social-icons">
-                             <li class="social-icon-list">
-                                 <a href="" class="soc-link">
-                                      <svg class="team-icon">
-                                         <use href="./images/icons.svg#icon-ellipse-3"></use>
-                                     </svg>
-                                 </a>
-                             </li>
-                             <li class="social-icon-list">
-                                <a href="" class="soc-link">
-                                    <svg class="team-icon">
-                                          <use href="./images/icons.svg#icon-ellipse"></use>
-                                    </svg>
-                                 </a>
-                            </li>
-                            <li class="social-icon-list">
-                                <a href="" class="soc-link">
-                                     <svg class="team-icon">
-                                         <use href="./images/icons.svg#icon-ellipse-1"></use>
-                                     </svg>
-                                </a>
-                            </li>
-                            <li class="social-icon-list">
-                                <a href="" class="soc-link">
-                                    <svg class="team-icon">
-                                        <use href="./images/icons.svg#icon-ellipse-2"></use>
-                                    </svg>
-                                 </a>
-                             </li>
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse-3"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -270,41 +278,42 @@
                             <p lang="en">
                                 UI Designer
                             </p>
-                                <ul class="social-icons">
-                                    <li class="social-icon-list">
-                                        <a href="" class="soc-link">
-                                            <svg class="team-icon">
-                                                <use href="./images/icons.svg#icon-ellipse-3"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon-list">
-                                        <a href="" class="soc-link">
-                                            <svg class="team-icon">
-                                                <use href="./images/icons.svg#icon-ellipse"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon-list">
-                                        <a href="" class="soc-link">
-                                            <svg class="team-icon">
-                                                <use href="./images/icons.svg#icon-ellipse-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon-list">
-                                        <a href="" class="soc-link">
-                                            <svg class="team-icon">
-                                                <use href="./images/icons.svg#icon-ellipse-2"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <ul class="social-icons">
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse-3"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icon-list">
+                                    <a href="" class="soc-link">
+                                        <svg class="team-icon">
+                                            <use href="./images/icons.svg#icon-ellipse-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+
 
         <section class="client-section">
             <div class="container">
@@ -411,6 +420,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
  </body>
 </html>   
 
