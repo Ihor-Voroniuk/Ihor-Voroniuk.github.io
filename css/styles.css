@@ -223,12 +223,7 @@ section {
     
 }
 
-
-
 /* ------------------modal BTN in header ------------------*/
-
-
-
 
 .backdrop.is-hidden {
     opacity: 0;
@@ -307,10 +302,6 @@ section {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
 
 /* ------------------modal-box------------------*/
 
@@ -965,12 +956,7 @@ border-radius: 0px 0px 4px 4px;
     fill:var(--color-link);
 }
 
-    
-
-
-
-
-/* ---------------------Footer BG------------------- */
+     /* ---------------------Footer BG------------------- */
 .footer-bg{
     background-color: var(--color-sect-bg);
     padding-top: 60px;
@@ -1128,10 +1114,6 @@ border-radius: 0px 0px 4px 4px;
     background-color: var(--color-link);
 }
 
-
-
-
-
 /*---------------------- portfolio------------------- */
 
     /*---- btn-portfolio -----*/
@@ -1256,14 +1238,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 
-
-
-
-
 /*---------------------- modal------------------- */
-
-
-
 
 .modal-link{
     position: relative;
