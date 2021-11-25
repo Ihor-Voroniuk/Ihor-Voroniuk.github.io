@@ -23,7 +23,10 @@
 
 
 
-
+.social__icon-list:hover .social__icon-svg,
+.social__icon-list:focus .social__icon-svg {
+    fill: #FFFFFF;
+}
 
 .social__icon-svg {
     width: 20px;
