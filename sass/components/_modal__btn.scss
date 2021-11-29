@@ -1,4 +1,7 @@
 .button-service {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -12,6 +15,10 @@
     min-width: 200px;
     height: 50px;
     border: none;
+    @media screen and (max-width: 479px) {
+    top: 4px;
+    right: 4px;
+    }
     &:hover,
     &:focus {
         color: var(--color-bg);
@@ -80,6 +87,10 @@
          color: #FFFFFF;
          background-color: var(--color-link);
      }
+     @media screen and (max-width: 479px) {
+    top: 4px;
+    right: 4px;
+}
 }
 
 

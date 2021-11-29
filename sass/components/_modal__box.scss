@@ -1,6 +1,4 @@
-.modal__box {
-    flex-grow: 2;
-}
+
 
 .modal__input__label-text {
     font-style: normal;
@@ -12,6 +10,14 @@
     margin-top: 0;
     margin-bottom: 12px;
     color: var(--color-h-text);
+    @media screen and (max-width: 479px) {
+    font-size: 16px;
+}
+
+color: var(--color-h-text);
+@media screen and (min-width: 1200px) {
+    line-height: 1.15;
+}
 }
 .email-form {
     display: flex;
@@ -73,6 +79,15 @@
     border: 2px solid var(--color-h-text);
     border-radius: 2px;
     overflow: hidden;
+        @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .user-aggrement.checkbox+.checkbox-icon .icon-svg {
@@ -92,7 +107,7 @@
     background-color: var(--color-link);
 }
 
-.modal__box-input label {
+.modal__box-input  {
     margin-bottom: 20px;
     --footer-font-size: calc( 16px * 0.875);
     font-style: normal;
@@ -100,6 +115,7 @@
     text-transform: uppercase;
     font-size: var(--footer-font-size);
     line-height: 16px;
+    
 }
 
 .input-text {
@@ -110,6 +126,21 @@
 
 .confirm-text {
     color: var(--color-h-text);
+    align-self: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+}
+ @media screen and (max-width: 320px) {
+     font-size: 14px;
+     line-height: 1.71;
+ }
+    
 }
 
 .input-text:focus,
@@ -254,8 +285,37 @@
 
 .label-link {
     color: var(--color-link);
+    
 }
 
 .modal__box {
-    text-align: initial;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: #FFFFFF;
+    transition: 250ms;
+    border-radius: 4px;
+    padding: 40px;
+    @media screen and (max-width: 480px) {
+        min-width: 320px;
+        min-height: 568px;
+    }
+
+    @media screen and (min-width: 480px) {
+        min-width: 450px;
+        min-height: 609px;
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 769px) {
+        max-width: 450px;
+        max-height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+        min-height: 581px;
+    }
 }
+
