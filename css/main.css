@@ -818,6 +818,13 @@ section {
   fill: var(--color-link);
 }
 
+@media screen and (max-width: 320px) {
+  .modal__close-btn {
+    top: 34px;
+    right: 4px;
+  }
+}
+
 .modal {
   position: absolute;
   top: 50%;
