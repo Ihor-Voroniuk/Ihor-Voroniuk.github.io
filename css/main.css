@@ -1327,7 +1327,7 @@ section {
   .details {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (0fr);
+    -ms-grid-columns: (0fr)[2];
         grid-template-columns: repeat(2, 0fr);
   }
 }
@@ -1336,7 +1336,7 @@ section {
   .details {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (0fr);
+    -ms-grid-columns: (0fr)[4];
         grid-template-columns: repeat(4, 0fr);
   }
 }
@@ -1548,7 +1548,7 @@ section {
   .team__list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
@@ -1558,7 +1558,7 @@ section {
   .team__list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
@@ -1682,14 +1682,14 @@ section {
           justify-content: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (0fr);
+  -ms-grid-columns: (0fr)[2];
       grid-template-columns: repeat(2, 0fr);
   gap: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .partners__list {
-    -ms-grid-columns: (0fr);
+    -ms-grid-columns: (0fr)[3];
         grid-template-columns: repeat(3, 0fr);
   }
 }
@@ -2196,7 +2196,7 @@ section {
   .portfolio__menu {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
@@ -2206,7 +2206,7 @@ section {
   .portfolio__menu {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
 }
